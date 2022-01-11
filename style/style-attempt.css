@@ -14,7 +14,7 @@ input[type=text], select, textarea
     resize: none;
 }
 
-input[type=tel]
+input[type=tel], [type=email]
 {
     width: 100%;
     padding: 12px;
