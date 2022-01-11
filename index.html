@@ -5,18 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
-    
+    <link rel="stylesheet" href="style/style-attempt.css">
+    <script src="scripts/scripts.js"></script>
 </head>
 <body>
-    <h1> <a href="https://lms.uni-dubna.ru/mod/page/view.php?id=73015">
-        "Задание по теме" №3</a></h1>
-    <p>Ковалева Софья Денисовна</p>
-    <p>Группа номер: БИ-С-20</p>
-    <p>Кафедра <a href="https://uni-dubna.ru/sveden/FacultyPage?id=5ee2d240-86fb-400e-aa16-d48faeb7ad60">
-        Институт системного анализа и управления</a></p>
-    <p>Учебное заведение <a href="https://uni-dubna.ru/">
-        ГБОУ ВО МО Университет Дубна</a></p>
-    <p>Проверка это гит файл</p>
-    <p>Вторая проверка как открыть</p>
+    <form action="action_page.php" method="">
+<div class="container">
+    <h1>Регистрация</h1>
+    <p>Внесите вашу информацию ниже</p>
+  
+    <label for="user-name"><b>Фамилия Имя Отчество</b></label>
+    <input type="text" name="user-name" id="user-name"
+    placeholder="Фамилия Имя Отчество" pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*">
+
+    <label for="tel"><b>Контактный телефон</b></label>
+    <input type="tel" name="tel" id="tel"
+    placeholder="Контактный телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Email" name="email">
+
+    <label for="selection"><b>Выберите секцию конференции</b></label>
+    <select id="selection" name="selection">
+      <option value="math">Математика</option>
+      <option value="ph">Физика</option>
+      <option value="it">Информатика</option>
+    </select>
+
+    <label for="date"><b>Дата рождения:</b></label>
+    <input type="date" id="date" name="date"/>
+
+    <p>
+    <label for="speaker"><b>Участие с докладом:</b></label>
+    <input type="checkbox" name="speaker" id="speaker">
+    </p>
+
+    <div>
+    <label for="subject" id="subject-label" ><b>Тема доклада</b></label>
+    <textarea id="subject" name="subject" 
+    placeholder="Напишите тему доклада" style="height:200px"></textarea>
+    </div>
+
+    <input type="submit" value="Зарегистрироваться">
+</div>
 </body>
 </html>
